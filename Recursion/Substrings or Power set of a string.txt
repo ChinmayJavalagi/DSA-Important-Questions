@@ -1,0 +1,13 @@
+def powerSet(s):
+    #code here
+    arr = []
+    cur = ''
+    sub(s, cur, 0, arr)
+    return arr
+    
+def sub(s,cur,idx,arr):
+    if idx == len(s):
+        arr.append(cur)
+        return
+    sub(s,cur,idx+1,arr)
+    sub(s,cur+s[idx],idx+1,arr)
