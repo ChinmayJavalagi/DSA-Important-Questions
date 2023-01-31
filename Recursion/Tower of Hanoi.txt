@@ -1,0 +1,10 @@
+def toh(self, N, A, B, C):
+    # Your code here
+    if N == 1:
+        print("move disk",N,"from rod",A, "to rod", C)
+         
+    else:
+        self.toh(N-1, A, C, B) # from A to B using C
+        print("move disk",N,"from rod",fromm, "to rod", to)
+        self.toh(N-1, B, A, C) # from B to C using A
+    return (2**N)-1
