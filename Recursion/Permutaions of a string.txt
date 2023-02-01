@@ -1,0 +1,17 @@
+class Solution:
+    def find_permutation(self, S):
+        # Code here
+        return sorted(list(set(self.permute(S,'',0,[]))))
+        
+        
+    def permute(self, s, cur,ind,arr):
+        if len(s) == 0:
+            arr.append(cur)
+            return 
+        
+        for i in range(len(s)):
+            curstr = s[i]
+            newstr = s[:i]+s[i+1:]
+            self.permute(newstr, cur+curstr, ind+1,arr)
+        
+        return arr
