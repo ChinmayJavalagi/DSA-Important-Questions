@@ -1,0 +1,11 @@
+class Solution:
+    
+    def buildtree(self, inorder, preorder, n):
+        
+        if not preorder or not inorder: return None
+        root = Node(preorder[0])
+        rootInd = inorder.index(preorder[0])
+        root.left = self.buildtree(inorder[:rootInd], preorder[1:rootInd+1], n)
+        root.right = self.buildtree(inorder[rootInd+1:], preorder[rootInd+1:], n)
+        
+        return root
