@@ -1,0 +1,16 @@
+class Solution:
+    def isSubTree(self, T, S):
+        # Code here
+        if T == None:
+            return False
+        
+        if self.helper(T, S):
+            return True
+        
+        return self.isSubTree(T.left, S) or self.isSubTree(T.right, S)
+    
+    def helper(self, T, S):
+        if T==None and S == None: return 1
+        if T!=None and S!=None:
+            return T.data == S.data and self.helper(T.left, S.left) and self.helper(T.right, S.right)
+        return False
