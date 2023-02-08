@@ -2,12 +2,8 @@ def diameter(self,root):
         # Code here
         if root == None :
             return 0
-        lh = self.height(root.left)
-        rh = self.height(root.right)
-        currdiameter = lh+rh+1
-        ld = self.diameter(root.left)
-        rd = self.diameter(root.right)
-        return max(ld,rd,currdiameter)
+        currdiameter = self.height(root.left)+self.height(root.right)+1
+        return max(self.diameter(root.left),self.diameter(root.right),currdiameter)
         
     def height(self,root):
         if root == None:
