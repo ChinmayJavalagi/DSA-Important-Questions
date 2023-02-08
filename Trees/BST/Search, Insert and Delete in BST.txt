@@ -1,3 +1,5 @@
+#Searching
+
 class BST:
     
     #Function to search a node in BST.
@@ -13,4 +15,16 @@ class BST:
             return self.search(node.left,x)
 
 
+#Inserting
 
+def insert(root, Key):
+    # code here
+    if root is None:
+        return Node(Key)
+    
+    if Key < root.data:
+        root.left = insert(root.left, Key)
+    elif Key > root.data:
+        root.right = insert(root.right, Key)
+        
+    return root
