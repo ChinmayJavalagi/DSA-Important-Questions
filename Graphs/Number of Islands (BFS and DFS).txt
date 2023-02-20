@@ -42,3 +42,25 @@ class Solution:
                         visited[nrow][ncol] = 1
                         q.append([nrow, ncol])
  
+
+
+
+
+
+#DFS
+
+
+def dfs(self, grid, visited, row, col):
+        
+        n = len(grid)
+        m = len(grid[0])
+        
+        visited[row][col] = 1
+        
+        for drow in range(-1, 2):
+            for dcol in range(-1, 2):
+                nrow = row + drow
+                ncol = col + dcol
+                if nrow>=0 and nrow<n and ncol>=0 and ncol<m and not visited[nrow][ncol] and grid[nrow][ncol] == 1:
+                    visited[nrow][ncol]
+                    self.dfs(grid, visited, nrow, ncol)
