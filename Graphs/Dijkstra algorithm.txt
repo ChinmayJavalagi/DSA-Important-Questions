@@ -1,0 +1,20 @@
+import heapq
+import math
+class Solution:
+
+    def dijkstra(self, V, adj, S):
+
+        heap = []
+        dist = [math.inf]*V
+        dist[S] = 0
+        heapq.heappush(heap, (S, 0))
+        while heap:
+            s = heapq.heappop(heap)
+            n = s[0]
+            w = s[1]
+            for i in adj[n]:
+                if i[1] + w < dist[i[0]]:
+                    dist[i[0]] = i[1]+w
+                    heapq.heappush(heap, (i[0], dist[i[0]]))
+                    
+        return dist
