@@ -12,7 +12,7 @@ class Solution:
         adj = defaultdict(list)
         dist = [10**8]*V
         dist[S] = 0
-        for i in range(V):
+        for i in range(V-1):
             for s in edges:
                 u = s[0]
                 v = s[1]
