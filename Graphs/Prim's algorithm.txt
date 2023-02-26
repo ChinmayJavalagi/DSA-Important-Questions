@@ -1,0 +1,31 @@
+import heapq
+class Solution:
+    
+    #Function to find sum of weights of edges of the Minimum Spanning Tree.
+    def spanningTree(self, V, adj):
+        #code here
+        pq = []
+        
+        #[weight, node]
+        heapq.heappush(pq, [0,0])
+        sum = 0
+        visited = [0]*V
+        
+        while pq:
+            s = heapq.heappop(pq)
+            
+            w = s[0]
+            n = s[1]
+            
+            if visited[n] == 1:
+                continue
+            visited[n] = 1
+            sum += w
+    
+            for u in adj[n]:
+                adjNode = u[0]
+                edW = u[1]
+                if not visited[adjNode]:
+                    heapq.heappush(pq, [edW, adjNode])
+                    
+        return sum
