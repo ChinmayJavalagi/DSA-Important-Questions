@@ -1,4 +1,4 @@
-''''It finds the shortest paths from a single source vertex to all other vertices in a graph.''''
+'''It finds the shortest paths from a single source vertex to all other vertices in a graph.'''
 
 #TC - E*log(V) 
 
