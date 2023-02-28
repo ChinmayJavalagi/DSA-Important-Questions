@@ -1,3 +1,7 @@
+# SC - N X M 
+# TC - N X M [while] + (N X M * 4) [for] = N X M
+
+
 from collections import deque
 class Solution:
 
