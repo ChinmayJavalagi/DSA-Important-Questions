@@ -1,3 +1,7 @@
+# SC - O(V)
+# TC - O(V + 2E) + O(N) [ disconnected graph]
+# 2E - no of degree
+
 #BFS
 
 from typing import List
