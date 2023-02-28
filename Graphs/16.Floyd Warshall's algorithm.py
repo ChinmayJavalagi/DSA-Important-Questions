@@ -1,6 +1,6 @@
 '''Floyd–Warshall algorithm is an algorithm for finding shortest paths in a directed weighted graph 
 with positive or negative edge weights.
-A single execution of the algorithm will find the lengths of shortest paths between all pairs of vertices'''
+A single execution of the algorithm will find the lengths of shortest paths between all pairs of vertices.'''
 
 # TC - N**3
 
