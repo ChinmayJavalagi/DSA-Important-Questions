@@ -1,3 +1,9 @@
+'''The Bellman–Ford algorithm is an algorithm that computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph.
+
+Dijkstra doesn’t work for Graphs with negative weights/negative cycles, Bellman-Ford works for such graphs.'''
+
+#TC - V*E
+
 class Solution:
     # Function to construct and return cost of MST for a graph
     # represented using adjacency matrix representation
