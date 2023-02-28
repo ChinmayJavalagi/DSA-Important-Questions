@@ -1,3 +1,6 @@
+# For DAG
+# TC - ( V + E ) [same as dfs]
+
 class Solution:
     
     #Function to return list containing vertices in Topological order.
