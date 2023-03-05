@@ -1,4 +1,9 @@
 
+#TC - O(n)
+#SC - O(n)
+
+#Can be space optimised furthur
+
 class Solution:
     def minCostClimbingStairs(self, cost, N):
         #Write your code here
