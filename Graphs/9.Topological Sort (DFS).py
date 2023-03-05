@@ -1,3 +1,12 @@
+'''Topological sorting for Directed Acyclic Graph (DAG) 
+is a linear ordering of vertices such that for every directed edge u v, vertex u comes before v in the ordering.
+
+Note: Topological Sorting for a graph is not possible if the graph is not a DAG.'''
+
+
+# For DAG
+# TC - ( V + E ) [same as dfs]
+
 class Solution:
     
     #Function to return list containing vertices in Topological order.

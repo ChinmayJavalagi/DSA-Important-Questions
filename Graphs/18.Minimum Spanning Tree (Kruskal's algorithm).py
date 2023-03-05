@@ -1,3 +1,14 @@
+'''Kruskal's algorithm finds a minimum spanning forest of an undirected edge-weighted graph. If the graph is connected, it finds a minimum spanning tree. It is a greedy algorithm in graph theory as in each step it adds the next lowest-weight edge that will not form a cycle to the minimum spanning forest'''
+
+
+'''
+1.Sort all the edges in non-decreasing order of their weight. 
+2.Pick the smallest edge. Check if it forms a cycle with the spanning tree formed so far. If the cycle is not formed, include this edge. Else, discard it. 
+3.Repeat step#2 until there are (V-1) edges in the spanning tree.
+'''
+#Step #2 uses the Union-Find algorithm to detect cycles.
+# TC - E*log(E) or E*log(V)
+
 class Solution:
     
     #Function to find sum of weights of edges of the Minimum Spanning Tree.

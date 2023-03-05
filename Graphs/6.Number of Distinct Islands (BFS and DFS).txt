@@ -44,7 +44,7 @@ class Solution:
             
                 if nrow >= 0 and nrow<n and ncol >=0 and ncol <m and not visited[nrow][ncol] and grid[nrow][ncol] == 1:
                     visited[nrow][ncol] = 1
-                    q.append([nrow, ncol])s
+                    q.append([nrow, ncol])
 
 
 

@@ -1,3 +1,8 @@
+'''Kosaraju's Algorithm is a linear time algorithm to find the strongly connected components of a directed graph'''
+
+# TC - O(V+E)
+
+
 from collections import defaultdict
 class Solution:
     
@@ -7,13 +12,13 @@ class Solution:
         visited = [0]*V
         arr = []
         cnt = 0
-        for i in range(V):
+        for i in range(V):                                               # TC - O(V+E)
             if not visited[i]:
                 self.dfs(adj, arr, i, visited)
     
         
         adjT = defaultdict(list) 
-        for i in range(V):
+        for i in range(V):                                                # TC - O(V+E)
             for u in adj[i]:
                 adjT[u].append(i)
         
@@ -22,7 +27,7 @@ class Solution:
             i = arr.pop()
             if not visited[i]:
                 cnt+=1
-                self.dfs2(adjT, i, visited)
+                self.dfs2(adjT, i, visited)                                # TC - O(V+E)
                 
         return cnt
         
