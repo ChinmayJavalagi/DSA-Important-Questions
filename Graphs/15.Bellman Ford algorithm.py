@@ -17,7 +17,7 @@ class Solution:
         #code here
         dist = [10**8]*V
         dist[S] = 0
-        for i in range(V-1):
+        for i in range(V+1):
             for u,v,w in edges:
                 if dist[u]!=10**8 and dist[u]+w < dist[v]:
                     if i == V:
