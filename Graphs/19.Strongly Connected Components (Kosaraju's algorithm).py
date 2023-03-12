@@ -1,4 +1,7 @@
-'''Kosaraju's Algorithm is a linear time algorithm to find the strongly connected components of a directed graph'''
+'''Kosaraju's Algorithm is a linear time algorithm to find the strongly connected components of a directed graph
+
+A graph is said to be strongly connected if every vertex is reachable from every other vertex.
+'''
 
 # TC - O(V+E)
 
