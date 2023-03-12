@@ -15,23 +15,13 @@ class Solution:
     
     def bellman_ford(self, V, edges, S):
         #code here
-        adj = defaultdict(list)
         dist = [10**8]*V
         dist[S] = 0
         for i in range(V-1):
-            for s in edges:
-                u = s[0]
-                v = s[1]
-                w = s[2]
+            for u,v,w in edges:
                 if dist[u]!=10**8 and dist[u]+w < dist[v]:
+                    if i == V:
+                        return [-1]
                     dist[v] = dist[u]+w
-                    
-        for s in edges:
-            u = s[0]
-            v = s[1]
-            w = s[2]
-            if dist[u]!=10**8 and dist[u]+w<dist[v]:
-                return [-1]
             
-                
         return dist
