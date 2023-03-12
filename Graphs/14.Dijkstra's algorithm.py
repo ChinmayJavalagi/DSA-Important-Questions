@@ -13,15 +13,15 @@ class Solution:
         pq = []
         dist = [math.inf]*V
         dist[S] = 0
-        heapq.heappush(pq, (S, 0))
+        heapq.heappush(pq, (0, S))
         while pq:
             s = heapq.heappop(pq)
-            n = s[0]
-            w = s[1]
+            n = s[1]
+            w = s[0]
             for i in adj[n]:
-                u = i[0]
-                if i[1]+w < dist[u]:
-                    dist[u] = i[1]+w
-                    heapq.heappush(pq, (u, dist[u]))
+                u = i[1]
+                if i[0]+w < dist[u]:
+                    dist[u] = i[0]+w
+                    heapq.heappush(pq, (dist[u], u))
                     
         return dist
