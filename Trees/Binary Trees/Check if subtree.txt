@@ -1,3 +1,6 @@
+The task is to check if S is present as subtree in T.
+A subtree of a tree T1 is a tree T2 consisting of a node in T1 and all of its descendants in T1.
+
 class Solution:
     def isSubTree(self, T, S):
         # Code here
