@@ -7,6 +7,8 @@
 Note: Comments for isPossible function is written in that function itself.
 """
 
+# Time Complexity: O(9(n ^ 2)), in the worst case, for each cell in the n2 board, we have 9 possible numbers.
+
 class Solution(object):
     def solveSudoku(self, board):
         """
