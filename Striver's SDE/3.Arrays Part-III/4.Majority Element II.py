@@ -1,4 +1,4 @@
-#Extended Moore's voting algorithm
+#Extended Moore's voting algorithm.
 """
 There will be atmost 2 majority elements which will be repeated more than n/3 times.
 So we take 2 variable to hold two maj eles and do the same as we did for Majority Element I question.
