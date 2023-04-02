@@ -7,6 +7,8 @@
 4. Return res
 """
 
+#Time Complexity: O(N) 
+
 class Solution(object):
     def trap(self, height):
         """
