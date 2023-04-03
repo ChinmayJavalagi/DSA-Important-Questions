@@ -1,5 +1,5 @@
 """
-Bruteforce: We start from 1 and keep checking id 1 power n is equal to m, if i**n goes > m and never becomes equal then we return -1.
+Bruteforce: We start from 1 and keep checking is 1 power n is equal to m, if i**n goes > m and never becomes equal then we return -1.
 Binary search: Keep l=1 and h=m, iterate until h-l becomes less than one, that mean no integer root found so return -1, else do the normal binary search.
 """
 
