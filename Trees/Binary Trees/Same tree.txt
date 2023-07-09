@@ -1,0 +1,12 @@
+class Solution(object):
+    def isSameTree(self, p, q):
+        return self.helper(p, q)
+
+    def helper(self, p, q):
+        if p==None and q == None:
+            return True
+        if not p or not q:
+            return False
+        if p.val!=q.val:
+            return False
+        return self.helper(p.left, q.left) and self.helper(p.right, q.right)
