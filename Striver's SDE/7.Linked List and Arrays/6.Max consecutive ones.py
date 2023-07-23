@@ -6,6 +6,10 @@
 3. return max
 """
 
+
+Input: nums = [1,1,0,1,1,1]
+Output: 3
+
 #Time Complexity: O(N)
 
 class Solution(object):
