@@ -8,6 +8,14 @@
 
 """
 
+Input: n = 6 
+arr[] = {0900, 0940, 0950, 1100, 1500, 1800}
+dep[] = {0910, 1200, 1120, 1130, 1900, 2000}
+Output: 3
+Explanation: 
+Minimum 3 platforms are required to 
+safely arrive and depart all trains.
+
 #Time Complexity: O(nlogn)
 
 class Solution:    
