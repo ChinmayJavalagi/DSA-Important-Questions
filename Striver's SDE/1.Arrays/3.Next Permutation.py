@@ -16,10 +16,12 @@
 class Solution(object):
     def nextPermutation(self, nums):
 
+        k = -1
         for i in range(len(nums)-2,-1,-1):
             if nums[i]<nums[i+1]:
+                k = i
                 break
-        if i<0:
+        if k==-1:
             nums.reverse()
         else:
 
